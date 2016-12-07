@@ -14,7 +14,7 @@ Docker setup is based on the official Ethereum go-client image on Dockerhub.
 
 ##Usage
 1. Change password in geth-node/passfile and your "Genesis"-Block (geth-node/genesis.json) as you see fit.
-2. Run docker-compose build - this will build your Docker image, including the DAG - *as a result, this might take a while!*
-3. Run docker-compose up -d
-4. Check if your miner is doing work by using docker logs
-5. Scale as you like, using docker-compose scale eth-miner=3 or any number you want to try.
+2. Run `docker-compose build` - this will build your Docker image, including the DAG - **as a result, this might take a while!**.
+3. Run `docker-compose up -d`.
+4. Check if your miner is doing work by using `docker logs gethdockercluster_eth-miner_1`.
+5. Scale miners as you like, using `docker-compose scale eth-miner=3` or any number you want to try.
